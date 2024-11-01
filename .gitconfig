@@ -1,0 +1,14 @@
+[user]
+	name = John Roice Aldeza
+	email = jroicealdeza@gmail.com
+[init]
+	defaultBranch = main
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[core]
+	autocrlf = input
+[credential]
+	helper = store
