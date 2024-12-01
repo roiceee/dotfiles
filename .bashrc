@@ -119,4 +119,4 @@ fi
 # for laravel sail alias
 alias sail='sh $([ -f sail ] && echo sail || echo vendor/bin/sail)'
 
-export EDITOR='nano'
+export EDITOR='vim'
