@@ -1,7 +1,7 @@
-# /home/roiceee/.config/tmuxinator/leaderboarder.yml
+# /home/roiceee/.config/tmuxinator/imperate-local.yml
 
-name: leaderboarder
-root: ~/Documents/dev-files/web/leaderBoarder/
+name: imperate-local
+root: ~/Documents/dev-files/freelance/imperateph
 
 # Optional tmux socket
 # socket_name: foo
@@ -12,7 +12,7 @@ root: ~/Documents/dev-files/web/leaderBoarder/
 # Project hooks
 
 # Runs on project start, always
-# on_project_start: command
+on_project_start: sudo service postgresql start
 
 # Run on project start, the first time
 # on_project_first_start: command
@@ -45,16 +45,16 @@ root: ~/Documents/dev-files/web/leaderBoarder/
 # attach: false
 
 windows:
-  - frontend:
+  - imperate-website:
       layout: equal-vertical
       panes:
-        - cd frontend && npm run dev # Frontend pane
-        - google-chrome -u http://localhost:5173
-        - cd frontend                                   # Empty pane, defaults to root
+        - cd imperateph-website && npm run dev # Frontend pane
+        - google-chrome -u http://localhost:3000
+        -                                     # Empty pane, defaults to root
 
-  - backend:
+  - strapi:
       layout: equal-vertical
       panes:
-        - cd backend && npm run dev       # Backend development
-        - postman
-        - cd backend                                    # Empty pane, defaults to root
+        - cd strapi && npm run develop       # Backend development
+        - google-chrome -u http://localhost:1337
+        -                                     # Empty pane, defaults to root

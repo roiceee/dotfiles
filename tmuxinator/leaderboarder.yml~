@@ -56,5 +56,4 @@ windows:
       layout: equal-vertical
       panes:
         - cd backend && npm run dev       # Backend development
-        - postman
         - cd backend                                    # Empty pane, defaults to root

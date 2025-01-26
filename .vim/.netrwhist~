@@ -1,6 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =8
-let g:netrw_dirhist_8='/home/roiceee/dotfiles/tmux'
+let g:netrw_dirhistcnt =7
 let g:netrw_dirhist_7='/home/roiceee/Documents/dev-files/web/proverbs-app/src/pages'
 let g:netrw_dirhist_6='/home/roiceee/Documents/dev-files/web/leaderBoarder'
 let g:netrw_dirhist_5='/home/roiceee/Documents/dev-files/web'
