@@ -1,0 +1,6 @@
+[submodule "catppuccin-themes/catppuccin-themes/rstudio"]
+	path = catppuccin-themes/catppuccin-themes/rstudio
+	url = https://github.com/catppuccin/rstudio.git
+[submodule "catppuccin-themes/rstudio"]
+	path = catppuccin-themes/rstudio
+	url = https://github.com/catppuccin/rstudio.git
